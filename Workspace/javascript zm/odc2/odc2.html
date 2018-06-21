@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+  <html lang="pl">
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    function check()
+    {
+      var liczba=document.getElementById("pole").value;
+      if
+      if(liczba>0)document.getElementById("result").innerHTML="dodatnia";
+      else if(liczba<0)document.getElementById("result").innerHTML="ujemna";
+      else if(liczba=="0")document.getElementById("result").innerHTML="zero";
+      else document.getElementById("result").innerHTML="wpisano nieprawidłową wartość";
+
+    }
+  </script>
+</head>
+
+
+<body>
+  <input type="text" id="pole"/>
+  <input type="submit" value="Sprawdź" onclick="check()"/>
+  <div id="result"></div>
+</body>
+</html>
